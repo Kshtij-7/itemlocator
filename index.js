@@ -17,6 +17,7 @@ function find() {
 }
 
 document.getElementById('excelFile').addEventListener('change', handleFile);
+document.getElementById('dropdown').addEventListener('change', find);
 
 function handleFile(event) {
     const fileInput = event.target;
