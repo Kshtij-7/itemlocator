@@ -2,10 +2,6 @@ var firstElements = [];
 var secondElements = [];
 
 function find() {
-   /* document.getElementById("output").value = "giuyrewuier"
-    document.getElementById("dropdown").value
-    console.log(document.getElementById("dropdown").innerText)
-    document.getElementById("output").innerText = document.getElementById("dropdown").value*/
     // Get the <select> element by its id
     var dropdown = document.getElementById("dropdown");
     
@@ -108,3 +104,46 @@ fetch(fileName)
     });
 
 }
+
+jQuery(document).ready(function($) {
+    // Use $ as an alias for jQuery within this block
+    $('.js-example-basic-single').select2();
+    $('.js-example-basic-single').on('select2:select',find)
+});
+
+
+
+/*
+const searchInput = document.getElementById('searchInput');
+const dropdownOptions = document.getElementById('dropdown').getElementsByTagName('option');
+
+searchInput.addEventListener('input', function() {
+    const filter = searchInput.value.toLowerCase();
+
+    for (const option of dropdownOptions) {
+        const optionText = option.text.toLowerCase();
+
+        if (optionText.includes(filter)) {
+            option.style.display = 'block';
+            option.innerHTML = optionText.replace(new RegExp(filter, 'gi'), (match) => `<mark>${match}</mark>`);
+        } else {
+            option.style.display = 'none';
+        }
+    }
+});
+
+searchInput.addEventListener('click', function(e) {
+    e.stopPropagation();
+});
+
+document.addEventListener('click', function() {
+    closeDropdown();
+});
+
+function closeDropdown() {
+    for (const option of dropdownOptions) {
+        option.style.display = 'block';
+        option.innerHTML = option.text;
+    }
+}
+*/

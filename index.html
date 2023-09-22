@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Item locator</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.3/xlsx.full.min.js"></script>
     <input type="file" id="excelFile" accept=".xlsx, .xls" /><br>
 
     <label for="dropdown">Select The item to find:</label>
-    <select id="dropdown">
+    <select id="dropdown" class="js-example-basic-single" style="width: 200px;">
         <!--<option value="Charger">Charger</option>
         <option value="a">a</option>
         <option value="b">b</option>
@@ -23,7 +25,9 @@
     <h1 id="output"></h1>
     
 </body>
-<script src="index.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.3/xlsx.full.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.full.min.js"></script>
+<script src="index.js"></script>
 
 </html>
