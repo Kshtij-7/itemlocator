@@ -13,7 +13,7 @@ function find() {
     var optionWithUnderscores = selectedOptionValue.replace(/\s+/g,'_');
     console.log(document.getElementById("imgSpan").innerHTML)
     document.getElementById("imgSpan").innerHTML = `<img src="./images/${optionWithUnderscores}.jpg" style="height: 500px; width: 500px;">`;
-    document.getElementById("imgSpan").innerHTML = document.getElementById("imgSpan").innerHTML + `<img src="./images/${locationWithUnderscores}" style="height: 500px; width: 500px;">`;
+    document.getElementById("imgSpan").innerHTML = document.getElementById("imgSpan").innerHTML + `<img src="./images/${locationWithUnderscores}.jpg" style="height: 500px; width: 500px;">`;
     //document.getElementById("output").textContent = "Selected option: " + selectedOptionValue;
 }
 
