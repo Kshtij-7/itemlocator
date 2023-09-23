@@ -10,9 +10,11 @@ function find() {
     console.log(location);
     document.getElementById("output").innerText = `The item is in ${location}`
     var locationWithUnderscores = location.replace(/\s+/g, '_');
-    console.log(document.getElementById("placeImg").innerHTML)
-    document.getElementById("placeImg").innerHTML = `<img src="./images/${locationWithUnderscores}.jpg" style="height: 500px; width: 500px;">`;
-   //document.getElementById("output").textContent = "Selected option: " + selectedOptionValue;
+    var optionWithUnderscores = selectedOptionValue.replace(/\s+/g,'_');
+    console.log(document.getElementById("imgSpan").innerHTML)
+    document.getElementById("imgSpan").innerHTML = `<img src="./images/${optionWithUnderscores}.jpg" style="height: 500px; width: 500px;">`;
+    document.getElementById("imgSpan").innerHTML = document.getElementById("imgSpan").innerHTML + `<img src="./images/${locationWithUnderscores}" style="height: 500px; width: 500px;">`;
+    //document.getElementById("output").textContent = "Selected option: " + selectedOptionValue;
 }
 
 document.getElementById('excelFile').addEventListener('change', handleFile);
