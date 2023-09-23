@@ -9,6 +9,9 @@ function find() {
     var location = secondElements[firstElements.indexOf(selectedOptionValue)]
     console.log(location);
     document.getElementById("output").innerText = `The item is in ${location}`
+    var locationWithUnderscores = location.replace(/\s+/g, '_');
+    console.log(document.getElementById("placeImg").innerHTML)
+    document.getElementById("placeImg").innerHTML = `<img src="./images/${locationWithUnderscores}.jpg" style="height: 500px; width: 500px;">`;
    //document.getElementById("output").textContent = "Selected option: " + selectedOptionValue;
 }
 
