@@ -8,7 +8,7 @@ function find() {
     var selectedOptionValue = dropdown.value;
     var location = secondElements[firstElements.indexOf(selectedOptionValue)]
     console.log(location);
-    document.getElementById("output").innerText = `The item is in ${location}`
+    document.getElementById("output").innerText = `The ${selectedOptionValue} is/are in ${location}`
     var locationWithUnderscores = location.replace(/\s+/g, '_');
     var optionWithUnderscores = selectedOptionValue.replace(/\s+/g,'_');
     console.log(document.getElementById("imgSpan").innerHTML)

@@ -7,9 +7,12 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
     <link href="style.css" rel="stylesheet">
 </head>
-<body>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.3/xlsx.full.min.js"></script>
-    <input type="file" id="excelFile" accept=".xlsx, .xls" /><br>
+<body><center>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.3/xlsx.full.min.js"></script><br><br><br>
+    <input type="file" id="excelFile" accept=".xlsx, .xls" />
+    <label for="excelFile" class="btn-2">Choose a custom file (.xlsx or .xls)</label>
+    <br><br><br>
+    <button id="find" onclick="find2()" style="--clr:#000000"><span>Use an Existing file</span><i></i></button><br><br><br>
 
     <label for="dropdown">Select The item to find:</label>
     <select id="dropdown" class="js-example-basic-single" style="width: 200px;">
@@ -21,10 +24,10 @@
     </select>
     <br>
    
-    <button id="find" onclick="find2()">use an existing file</button><br>
+    
     <h1 id="output"></h1>
 
-    <span id="imgSpan"></span>
+    <span id="imgSpan"></span></center>
 </body>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.3/xlsx.full.min.js"></script>
