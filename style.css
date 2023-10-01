@@ -5,7 +5,18 @@
   border-radius: 25px;
   border-style:solid;
   margin: 10px;
-  text-wrap: "iafe";
+}
+
+body{
+  border-style: groove;
+  border: #000000;
+  border-width: 100px;
+}
+
+.bodyCss{
+  border-width: 6px; /* Border thickness */
+  border-style: solid; /* Border style (solid, dashed, dotted, etc.) */
+  border-color: #000000; /* Border color */
 }
 
 /* Add your custom styles here */

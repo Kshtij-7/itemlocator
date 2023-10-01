@@ -8,12 +8,12 @@ function find() {
     var selectedOptionValue = dropdown.value;
     var location = secondElements[firstElements.indexOf(selectedOptionValue)]
     console.log(location);
-    document.getElementById("output").innerText = `The ${selectedOptionValue} is/are in ${location}`
+    //document.getElementById("output").innerText = `The ${selectedOptionValue} is/are in ${location}`
     var locationWithUnderscores = location.replace(/\s+/g, '_');
     var optionWithUnderscores = selectedOptionValue.replace(/\s+/g,'_');
     console.log(document.getElementById("imgSpan").innerHTML)
-    document.getElementById("textWithItemImage").innerHTML = document.getElementById("textWithItemImage").innerHTML +  `<img src="./images/${optionWithUnderscores}.jpg" style="height: 120px; width: 80px;">`;
-    document.getElementById("imgSpan").innerHTML = document.getElementById("imgSpan").innerHTML + `<img src="./images/${locationWithUnderscores}.jpg" style="height: 500px; width: 500px;" class="imgSpanImg">`;
+    document.getElementById("textWithItemImage").innerHTML = `<h1 id="output">The ${selectedOptionValue} is/are in ${location}</h1>`+ `<img src="./images/${optionWithUnderscores}.jpg" style="height: 120px; width: 80px;">`;
+    document.getElementById("imgSpan").innerHTML = /*document.getElementById("imgSpan").innerHTML + */`<img src="./images/${locationWithUnderscores}.jpg" style="height: 500px; width: 500px;" class="imgSpanImg">`;
     //document.getElementById("output").textContent = "Selected option: " + selectedOptionValue;
 }
 
